@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/CssSidebar.css" />
+    <link rel="stylesheet" href="./CSS/CssNavbar.css" />
+  </head>
+  <body>
+    <style>
+      .gay {
+        color: brown;
+      }
+    </style>
+    <!-- closefunctionSidebar -->
+
+    <!-- Navbar (หรือก็คือ แท็บด้านบนสีดำตรงโลโก้) -->
+    <ul>
+      <div class="grid-container">
+        <!-- openfunctionSidebar -->
+        <li>
+          <div id="main">
+            <span style="font-size: 30px; cursor: pointer">
+              <!-- onclick="openNav()" -->
+              <img src="logo.png" width="120px" />
+            </span>
+          </div>
+        </li>
+      </div>
+      <div class="center">
+        <li><a href="login2.html">Home</a></li>
+        <li><a href="Features1.html">Features</a></li>
+        <li><a href="Pricing1.html">Pricing</a></li>
+        <li><a href="FAQs1.html">FAQs</a></li>
+        <li><a href="About1.html">About</a></li>
+        <li><a href="employee.php">employee</a></li>
+        <li><a href="er21.html">Recruiting</a></li>
+      </div>
+    
+     <div style="margin-top: 10px; position: absolute; right: 150px"> 
+       
+          <li style="width: 75px; height: 25px; color: white; cursor: pointer">
+            <?php echo $_SESSION['id_emp']; ?>
+          </li></a>
+      </div>
+      <div style="margin-top: 10px; position: absolute; right: 25px">
+        <a href="home.html">
+          <li style="width: 75px; height: 25px; color: white; cursor: pointer">
+            logout
+          </li>
+        </a>
+      </div>
+    </ul>
+
+    <!--------content--------->
+    <style>
+      .layout img {
+        width: 100%;
+        height: 100%;
+      }
+      #copyright {
+        background-color: black; /* ตั้งค่าสีพื้นหลังเป็นสีดำ */
+        color: white; /* ตั้งค่าสีข้อความเป็นสีขาว */
+        padding: 10px; /* เพิ่มการเว้นระยะขอบของพื้นหลัง */
+      }
+
+      #copy-left p {
+        margin: 0; /* ลบระยะขอบข้างของข้อความใน #copy-left */
+      }
+      body {
+        background-color: black; /* ตั้งค่าสีพื้นหลังของหน้าเว็บเป็นสีดำ */
+      }
+    </style>
+    <div class="layout">
+      <a href="apply.html">
+        <img src="background.JPG" ; style="cursor: pointer" />
+      </a>
+    </div>
+    <div id="copyright">
+      <div class="container">
+        <div id="copy-left">
+          <p>Copyright © Business ALive 2013</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

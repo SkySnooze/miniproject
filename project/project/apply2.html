@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/CssSidebar.css" />
+  <link rel="stylesheet" href="./CSS/CssNavbar.css" />
+</head>
+<body>
+  <!-- closefunctionSidebar -->
+
+  <!-- Navbar (หรือก็คือ แท็บด้านบนสีดำตรงโลโก้) -->
+  <ul>
+    <div class="grid-container">
+      <!-- openfunctionSidebar -->
+      <li>
+        <div id="main">
+          <span style="font-size: 30px; cursor: pointer">
+            <!-- onclick="openNav()" -->
+            <img src="logo.png" width="120px" />
+          </span>
+        </div>
+      </li>
+    </div>
+    <div class="center">
+        <li><a href="login2.html">Home</a></li>
+        <li><a href="Features1.html">Features</a></li>
+        <li><a href="Pricing1.html">Pricing</a></li>
+        <li><a href="FAQs1.html">FAQs</a></li>
+        <li><a href="About1.html">About</a></li>
+        <li><a href="employee.php">employee</a></li>
+        <li><a href="er21.html">Recruiting</a></li>
+        <li><a href="newEmp.php">Applicant</a></li>
+    </div>
+    <div style="margin-top: 10px; position: absolute; right: 150px"> 
+       
+  </div>
+  <div style="margin-top: 10px; position: absolute; right: 25px">
+    <a href="home.html">
+      <li style="width: 75px; height: 25px; color: white; cursor: pointer">
+        logout
+      </li>
+    </a>
+  </div>
+  </ul>
+<body>
+    <h1>ใบสมัครงาน</h1>
+    <form action="apply.php" method="POST">
+        &nbsp;<label for="name_nemp">ชื่อ:</label>
+        <input type="text" id="name_nemp" name="name_nemp" required>
+        <label for="lname_nemp">สกุล:</label>
+        <input type="text" id="lname_nemp" name="lname_nemp" required>
+        <br><br>
+        &nbsp;
+        <label for="position_applied_for">ตำแหน่งที่ต้องการ:</label>    
+        <select id="position_applied_for" name="position_applied_for" required>
+        <option value="">ตำแหน่ง </option>
+        <option value="Chief Executive Officer">Chief Executive Officer </option>
+        <option value="Head of Human Resources">Head of Human Resources </option>
+        <option value="Head of Marketing">Head of Marketing </option>
+        <option value="Head of Information Technology">Head of Information Technology </option>
+        <option value="Secretary">Secretary</option>
+        <option value="Employee">Employee</option>
+        <option value="Janitor">Janitor</option>
+        <option value="Hired employee">Hired employee</option>
+        <option value="Security Guard">Security Guard</option>
+        
+      </select>
+        <br><br>
+
+        &nbsp;<label for="address">ที่อยู่ปัจจุบันเลขที่:</label>
+        <input type="text" id="address" name="address" required>
+        &nbsp;
+        <br><br>
+        &nbsp;<label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        &nbsp;<label for="birthdate">วัน เดือน ปีเกิด:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <br><br>
+        &nbsp;<label for="gender">เพศ:</label>
+        <input type="radio" id="male" name="gender" value="male"> ชาย
+        <input type="radio" id="female" name="gender" value="female"> หญิง
+        <input type="radio" id="other" name="gender" value="other"> อื่นๆ
+        <br><br>
+        <label for="nationality">สัญชาติ:</label>
+        <input type="text" id="nationality" name="nationality" required>
+        <label for="race">เชื้อชาติ:</label>
+        <input type="text" id="race" name="race" required>
+        <br><br>
+        <label for="religion">ศาสนา:</label>
+        <input type="text" id="religion" name="religion" required>
+        <br><br>
+
+        วันที่สมัคร <span id="day"></span>
+                <script>
+                    let today = new Date().toISOString().slice(0, 10);
+                    document.getElementById("day").innerHTML = today;
+                </script>  
+        <br><br>
+
+        &nbsp;
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+</html>
